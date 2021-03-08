@@ -20,7 +20,7 @@ def moral_value(word, moral, normalized=False):
         return float('NaN')
     #annotation is between 1 and 9
     if normalized:
-        value = (value-1)/8
+        value = ((value-1)/8) * 2 - 1
     return value
 
 def __private_moral_value(word, moral):
